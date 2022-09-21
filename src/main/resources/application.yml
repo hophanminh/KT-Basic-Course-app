@@ -1,0 +1,18 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: student-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: admin
+  flyway:
+    schemas: public
+    user: postgres
+    password: admin
+    enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: update
